@@ -75,7 +75,7 @@ class BinaryTree:
     def _print_tree_recursive(self, node):
         if node is not None:
             self._print_tree_recursive(node.left)
-            print(node.value)
+            print(node.value, end = ' ')
             self._print_tree_recursive(node.right)
 
 
@@ -102,9 +102,9 @@ while True:
         continue
     if (4 == x):
        # Exibindo os números armazenados na árvore
-        print("\n\nNúmeros armazenados na árvore:\n")
+        print("\nNúmeros armazenados na árvore:\n")
         tree.print_tree() 
-        print("\n\n")
+        print("\n")
         continue
     if (2 == x):
         # Removendo um número específico
@@ -114,11 +114,11 @@ while True:
         if tree.search(number):
             tree.remove(number)
             # Exibindo os números armazenados após a remoção
-            print("\n\nNúmeros armazenados na árvore após a remoção:\n")
+            print("\nNúmeros armazenados na árvore após a remoção:\n")
             tree.print_tree()
-            print("\n\n")
+            print("\n")
         else:
-            print("O número não está presente na árvore.")
+            print("O número não está presente na árvore")
         continue
     if (5 == x):
         # Esvaziando completamente a árvore
